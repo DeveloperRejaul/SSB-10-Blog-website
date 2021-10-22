@@ -223,7 +223,7 @@ form {
     height: auto;
     width: 20px;
     margin-left: 15px;
-}  
+}
 /* ********************************************************
                     Responsive CSS Style
 ***********************************************************/
@@ -296,6 +296,10 @@ form {
     }
 }
 @media (max-width:768px) {
+    .service-item {
+        width: 98% !important;
+        box-sizing: border-box;
+    }
     .fix-with {
         width: 100%;
     }
@@ -356,5 +360,11 @@ form {
     }
     .blog-img {
         height: 145px;
+    }
+}
+@media (max-width:430px){
+    .header-right ul li a {
+        font-size: 16px;
+        padding: 0 8px;
     }
 }
