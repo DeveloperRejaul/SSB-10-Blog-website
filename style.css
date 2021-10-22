@@ -1,0 +1,360 @@
+/* Default SCC  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.fix-with{
+    width: 1024px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+/* Header CSS */
+.header{
+    background: rgb(27, 207, 4);
+}
+.header-left{
+    float: left;
+    width: 30%;
+}
+.header-left img{
+    width: 210px;
+    height: auto;
+}
+.header-right{
+    float: right;
+    width: 70%;
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-right ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 62px;
+    border-right: 1px solid #fff;
+    transition: .5s;
+}
+.header-right ul li a:hover{
+    background:rgb(32, 190, 11); ;
+}
+/* Banner */
+.banner{
+    background: url(https://www.linkpicture.com/q/geeks-2894621_1920.jpg) no-repeat center;
+    padding: 150px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-caption h1 {
+    background: rgba(52,152,219,.7);
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 8px 0px;
+    color: white;
+    margin-top: 10px;
+}
+.banner-caption h2{
+    background: rgba(0,0,0 ,.5);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 42px;
+    color: white;
+}
+input {
+    height: 38px;
+    width: 295px;
+    padding: 0 11px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    border: 1px solid rgba(52,152,219,.7);
+    background: white;
+    transition: .4s;
+    font-size: 20px;
+}
+input:hover{
+    background: rgb(228, 228, 228);
+}
+button {
+    width: 42px;
+    height: 40px;
+    background: rgba(52,152,219,.7);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    padding: 0 4px;
+    transition: .4s;
+}
+button:hover{
+    background:rgba(10, 119, 192, 0.7); ;
+}
+form {
+    display: inline-flex;
+    margin-top: 10px;
+}
+/* Service Section */
+.service{
+    margin-top: 50px;
+}
+.service-item {
+    float: left;
+    width: 28.3%;
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.service-item span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    background: #3498db;
+    font-size: 35px;
+    line-height: 60px;
+    border-radius: 20px 0 20px 0;
+}
+.service-item span i {
+    height: 44px;
+    width: auto;
+    margin-top: 8px;
+}
+.service-item h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+/* About */
+.about{
+    margin-top: 40px;
+}
+.about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about p{ 
+    max-width: 700px;
+    margin: auto;
+    font-size: 24px;
+}
+/* Blog section */
+.bolg-contnair{
+    margin: 60px 0;
+}
+.blog-left-content{
+    float: left;
+    width: 70%;
+}
+.blog-left-notification{
+    float: right;
+    width: 25%;
+}
+.blog-item{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.blog-img{
+    float: left;
+    margin-right: 15px;
+    height: 200px;
+    width: auto;
+}
+.blog-img img{
+    max-width: 100%;
+}
+/* Blog-notification */
+.blog-left-notification h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+.blog-left-notification ul{  
+    list-style: none;
+}
+.blog-left-notification ul li {
+    border: 1px solid #ddd;
+    padding: 13px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* Footer */
+.footer{
+    background: rgb(59, 55, 55);
+    color: #fff;
+    padding: 15px 0;
+}
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-right{
+    float:right;
+    width: 60%;
+}
+.Social-meno{
+    text-align: right;
+}
+.Social-meno li{
+    display: inline-block;
+}
+.Social-meno li img{
+    height: auto;
+    width: 20px;
+    margin-left: 15px;
+}  
+/* ********************************************************
+                    Responsive CSS Style
+***********************************************************/
+@media (max-width:1080px) {
+
+    .header-right ul li a {
+        padding: 0 20px;
+    }
+    .header-right ul {
+        text-align: center;
+    }
+    .fix-with {
+        width: 100%;
+    }
+    .blog-item img {
+        width: 107px;
+    }
+    .blog-item {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .blog-item {
+        max-width: 100%;
+    }
+    .blog-left-content {
+        width: 100%;
+    }
+    .blog-left-notification {
+        width: 50%;
+        float: none;
+        padding-left: 10px;
+    }
+}
+@media (max-width:992px) {
+    .header-right ul li a {
+        padding: 0 12px;
+        line-height: 51px;
+        font-size: 18px;
+    }
+    .header-right ul {
+        text-align: left;
+    }
+    .header-left img {
+        max-width: 100%;
+    }
+    .header-left {
+        width: 17%;
+    }
+    .banner {
+        padding: 100px 0;
+    }
+    .about h2 {
+        font-size: 30px;
+    }
+    .about h2 {
+        font-size: 30px;
+    }
+    .footer-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-right {
+        float: none;
+        width: 100%;
+    }
+    .Social-meno {
+        padding-top: 11px;
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .fix-with {
+        width: 100%;
+    }
+    .header-right {
+        width: 100%;
+    }
+    .header-right ul li a {
+        font-size: 18px;
+        border: none;
+    }
+    .header-right ul {
+        text-align: center;
+    }
+    .header-left {
+        width: 100%;
+        text-align: center;
+    }
+    .banner {
+        padding: 48px 0;
+    }
+    .banner-caption h1 {
+        max-width: 286px;
+        font-size: 27px;
+        padding: 5px 0px;
+    }
+    input {
+        height: 32px;
+        width: 199px;
+    }
+    button {
+        width: 42px;
+        height: 34px;
+    }
+    .banner-caption h2 {
+        padding: 11px 17px;
+        font-size: 23px;
+    }
+    .banner {
+        background-attachment: inherit;
+    }
+    .about {
+        margin-top: 15px;
+    }
+    .about p {
+        max-width: 100%;
+        margin: auto;
+        font-size: 17px;
+        padding: 0px 19px;
+    }
+    .about h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .service-item {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .blog-img {
+        height: 145px;
+    }
+}
